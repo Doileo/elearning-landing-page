@@ -138,6 +138,8 @@ button {
 /***** Main *****/
 .hero-container {
   padding: 1rem 1.5rem 2.9rem 1.5rem;
+  height: 45rem;
+  background: url(../assets/image-hero-mobile.png) bottom center no-repeat;
 }
 
 h1 {
@@ -162,6 +164,26 @@ h1 {
   height: 56px;
   background: linear-gradient(0deg, #F02AA6, #FF6F48);
   cursor: pointer;
+}
+
+.card-section-container {
+  display: grid;
+  gap: var(--gap, 1rem);
+  padding-inline: 1.5rem;
+}
+
+.first-card {
+  height: 120px;
+  border-radius: 15px;
+  padding: 1.5rem 0 1.5rem 1.2rem;
+  background: linear-gradient(0deg, #F02AA6, #FF6F48);
+}
+
+h2 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 32px;
 }
 
 
