@@ -118,6 +118,14 @@ button {
     text-align: center;
  }
 
+section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
 /***** Header *****/
 .logo-image{
   height: 30px;
@@ -166,16 +174,19 @@ h1 {
   cursor: pointer;
 }
 
-.card-section-container {
+.card-section {
   display: grid;
-  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(auto-fit, 22rem);
+  justify-content: center;
+  background: linear-gradient(#fff, #f0f1ff);
+  gap: var(--gap, 5rem);
+  padding-bottom: 4rem;
   padding-inline: 1.5rem;
 }
 
 .first-card {
-  height: 120px;
   border-radius: 15px;
-  padding: 1.5rem 0 1.5rem 1.2rem;
+  padding: 1.5rem 4rem 1.5rem 1.7rem;
   background: linear-gradient(0deg, #F02AA6, #FF6F48);
 }
 
@@ -186,10 +197,62 @@ h2 {
   line-height: 32px;
 }
 
+.card {
+  padding-inline: 2.5rem;
+  background: #fff;
+  border-radius: 15px;
+  padding-bottom: 1.7rem;
+}
 
+.card img {
+  transform: translateY(-50%);
+}
 
+h3 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #13183F;
+  margin-bottom: 18px;
+}
 
+.card p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 26px;
+  color: #83869A;
+  margin-bottom: 1.5rem;
+}
 
+a.call-to-action {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #F74780;
+}
+
+footer {
+  background-color: #13183F;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+
+.footer-btn {
+  background: linear-gradient(#4851ff, #f02aa6);
+  color: #fff;
+  font-weight: 700;
+  width: 140px;
+  height: 48px;
+  border-radius: 35px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
 
 
 
