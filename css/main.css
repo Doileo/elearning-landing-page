@@ -255,12 +255,30 @@ footer {
 }
 
 
-
 /* ===================== Media Queries =========================== */
 
 /***** Tablet display larger than 768 px wide *****/
 
-@media only screen and (min-width: 768px) { }
+@media only screen and (min-width: 768px) {
+  header,
+  .hero-container {
+    padding-inline: 3rem;
+  }
+
+  .hero-container {
+    background: url(../assets/image-hero-tablet@2x.png);
+    background-size: cover;
+    background-position: top -180px right -340px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .hero-description {
+    max-width: 50%;
+  }
+ }
 
 /***** Desktop display larger than 1200 px wide *****/
 
