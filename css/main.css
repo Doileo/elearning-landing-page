@@ -278,7 +278,32 @@ footer {
   .hero-description {
     max-width: 50%;
   }
- }
+
+  .card-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 4rem;
+    justify-content: center;
+    height: 100%;
+    padding-inline: 2.5rem;
+    padding-bottom: 5.3rem;
+  }
+
+  .first-card {
+    padding: 3.5rem 1rem 8.6rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content{
+    padding-inline: 2.5rem;
+  }
+}
+
 
 /***** Desktop display larger than 1200 px wide *****/
 
