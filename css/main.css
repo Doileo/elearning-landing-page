@@ -24,8 +24,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -64,9 +64,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -83,40 +83,40 @@ select {
 
 /* ===================== Base Styles =========================== */
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.5;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 body {
-    background: #ffff;
-    font-family: "Plus Jakarta Sans", sans-serif;
+  background: #ffff;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* I cannot get the header or main to take on display:flex or the base button styles */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 button {
-    color: #000000;
-    font-weight: 500;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 1em;
-    padding: 1em;
-    text-align: center;
- }
+  color: #000000;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+}
 
 section {
   display: block;
@@ -127,20 +127,20 @@ a {
 }
 
 /***** Header *****/
-.logo-image{
+.logo-image {
   height: 30px;
 }
 
 .nav-btn {
-    color: #ffffff;
-    background-color: #13183F;
-    border-style: none;
-    border-radius: 30px;
-    width: 140px;
-    height: 48px;
-    font-weight: 700;
-    text-align: center;
-    padding: 5px 15px;
+  color: #ffffff;
+  background-color: #13183f;
+  border-style: none;
+  border-radius: 30px;
+  width: 140px;
+  height: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 15px;
 }
 
 /***** Main *****/
@@ -152,7 +152,7 @@ a {
 
 h1 {
   font-size: 2.5rem;
-  color: #13183F;
+  color: #13183f;
   font-weight: 800;
   line-height: 50.4px;
 }
@@ -160,7 +160,7 @@ h1 {
 .hero-container p {
   padding: 1.6rem 0 1.5rem 0;
   font-weight: 500;
-  color: #83869A;
+  color: #83869a;
 }
 
 .hero-section-btn {
@@ -170,7 +170,7 @@ h1 {
   color: #ffffff;
   width: 167px;
   height: 56px;
-  background: linear-gradient(0deg, #F02AA6, #FF6F48);
+  background: linear-gradient(0deg, #f02aa6, #ff6f48);
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ h1 {
 .first-card {
   border-radius: 15px;
   padding: 1.5rem 4rem 1.5rem 1.7rem;
-  background: linear-gradient(0deg, #F02AA6, #FF6F48);
+  background: linear-gradient(0deg, #f02aa6, #ff6f48);
 }
 
 h2 {
@@ -211,7 +211,7 @@ h2 {
 h3 {
   font-weight: 800;
   font-size: 1.25rem;
-  color: #13183F;
+  color: #13183f;
   margin-bottom: 18px;
 }
 
@@ -219,18 +219,18 @@ h3 {
   font-weight: 500;
   font-size: 1rem;
   line-height: 26px;
-  color: #83869A;
+  color: #83869a;
   margin-bottom: 1.5rem;
 }
 
 a.call-to-action {
   font-weight: 700;
   font-size: 1.125rem;
-  color: #F74780;
+  color: #f74780;
 }
 
 footer {
-  background-color: #13183F;
+  background-color: #13183f;
 }
 
 .footer-content {
@@ -253,7 +253,6 @@ footer {
   padding: 5px 15px;
   cursor: pointer;
 }
-
 
 /* ===================== Media Queries =========================== */
 
@@ -299,29 +298,68 @@ footer {
     font-size: 1.5rem;
   }
 
-  .footer-content{
+  .footer-content {
     padding-inline: 2.5rem;
   }
 }
 
-
 /***** Desktop display larger than 1200 px wide *****/
 
-@media only screen and (min-width: 1200px) { 
-  header,
-  .hero-container {
-    padding-top: 2.45rem;
-    padding-inline: 10.31rem;
+@media only screen and (min-width: 1200px) {
+  header {
+    padding-top: 2rem;
+    margin: 0 6rem 0 10rem;
   }
-  
+
+  main {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .hero-container {
     background: url(../assets/image-hero-desktop@2x.png);
     background-size: 936px;
-    background-position: top -13rem right -18rem;
+    background-position: top -8rem right -19rem;
     background-repeat: no-repeat;
     max-width: 144rem;
-    margin-inline: auto;
     padding-bottom: 10rem;
+    margin-left: 10rem;
+    transform: translateY(-15%);
   }
-  
+
+  .hero-description {
+    padding-top: 13rem;
+    max-width: 30%;
+    margin-right: 26.5rem;
+  }
+
+  .hero-section-btn:hover {
+    background: linear-gradient(
+      rgba(72, 81, 255, 0.5),
+      rgba(240, 42, 167, 0.5)
+    );
+  }
+
+  .card-section-container {
+    background: linear-gradient(#fff, #f0f1ff);
+    padding-inline: 10rem;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .footer-content {
+    padding-inline: 12rem;
+  }
+
+  .footer-btn:hover {
+    background: linear-gradient(
+      rgba(72, 81, 255, 0.5),
+      rgba(240, 42, 166, 0.5)
+    );
+  }
 }
