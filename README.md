@@ -33,6 +33,18 @@ Users should be able to:
 
 ![Mobile screenshot](./assets/mobile-screenshot.png)
 
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <div style="flex-basis: 30%;">
+    <img src="./assets/desktop-screenshot.png" alt="Desktop screenshot">
+  </div>
+  <div style="flex-basis: 30%;">
+    <img src="./assets/tablet-screenshot.png" alt="Tablet screenshot">
+  </div>
+  <div style="flex-basis: 30%;">
+    <img src="./assets/mobile-screenshot.png" alt="Mobile screenshot">
+  </div>
+</div>
+
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/solutions/responsive-elearning-landing-page-using-css-grid-Ak5xwq6dAx)
