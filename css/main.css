@@ -126,22 +126,22 @@ a {
   text-decoration: none;
 }
 
-/***** Header *****/
+/*  Header styles */
 .logo-image {
   height: 30px;
 }
 
 .nav-btn {
   color: #ffffff;
+  font-weight: 700;
   background-color: #13183f;
   border-style: none;
   border-radius: 30px;
-  font-weight: 700;
   text-align: center;
   padding: 1rem 2rem;
 }
 
-/***** Main *****/
+/* Main styles */
 .hero-container {
   padding: 1rem 1.5rem 2.9rem 1.5rem;
   height: 45rem;
@@ -172,7 +172,7 @@ h1 {
   cursor: pointer;
 }
 
-.card-section {
+.product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 22rem);
   justify-content: center;
@@ -182,7 +182,7 @@ h1 {
   padding-inline: 1.5rem;
 }
 
-.first-card {
+.featured-product {
   border-radius: 15px;
   padding: 1.5rem 4rem 1.5rem 1.7rem;
   background: linear-gradient(0deg, #f02aa6, #ff6f48);
@@ -195,29 +195,30 @@ h2 {
   line-height: 32px;
 }
 
-.card {
+.card-section {
   padding-inline: 2.5rem;
   background: #fff;
   border-radius: 15px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   padding-bottom: 1.7rem;
 }
 
-.card img {
+.card-imgage {
   transform: translateY(-50%);
 }
 
-h3 {
+.card-title {
+  color: #13183f;
   font-weight: 800;
   font-size: 1.25rem;
-  color: #13183f;
   margin-bottom: 18px;
 }
 
-.card p {
+.card-description {
+  color: #83869a;
   font-weight: 500;
   font-size: 1rem;
   line-height: 26px;
-  color: #83869a;
   margin-bottom: 1.5rem;
 }
 
@@ -226,6 +227,13 @@ a.call-to-action {
   font-size: 1.125rem;
   color: #f74780;
 }
+
+.call-to-action:hover {
+  color: #cc3e6d;
+}
+
+
+/* Footer Styles */
 
 footer {
   background-color: #13183f;
@@ -276,7 +284,7 @@ footer {
     max-width: 50%;
   }
 
-  .card-section {
+  .product-grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -288,7 +296,7 @@ footer {
     padding-bottom: 5.3rem;
   }
 
-  .first-card {
+  .featured-product {
     padding: 3.5rem 1rem 8.6rem 1.5rem;
   }
 
@@ -343,7 +351,7 @@ footer {
     padding-inline: 10rem;
   }
 
-  .card-section {
+  .product-grid {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
