@@ -27,12 +27,6 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop screenshot](./assets/desktop-screenshot.png)
-
-![Tablet screenshot](./assets/tablet-screenshot.png)
-
-![Mobile screenshot](./assets/mobile-screenshot.png)
-
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
   <div style="flex-basis: 30%;">
     <img src="./assets/desktop-screenshot.png" alt="Desktop screenshot">
